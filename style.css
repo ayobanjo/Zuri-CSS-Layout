@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Big Shoulders Display" "Lexend Deca";
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
