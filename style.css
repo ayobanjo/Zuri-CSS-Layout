@@ -3,14 +3,92 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"); */
 body {
   background-color: hsl(0, 0%, 95%);
   max-width: 1440px;
   margin: 0 auto;
-  font-family: "Big Shoulders Display" "Lexend Deca";
-}
-main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Big Shoulders Display", "Lexend Deca", sans-serif;
+}
+main {
+  display: flex;
+  /* border: 1px solid blue; */
+  border-radius: 8px;
+  max-width: 750px;
+}
+section {
+  padding: 38px;
+  width: 286px;
+  /* border: 1px solid; */
+}
+svg {
+  margin-bottom: 32px;
+}
+h1 {
+  font-family: "Big Shoulders Display";
+  color: hsl(0, 0%, 95%);
+  font-size: 35px;
+  margin-bottom: 32px;
+}
+p,
+button {
+  font-family: "Lexend Deca";
+}
+p {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 80px;
+}
+button {
+  background: hsl(0, 0%, 95%);
+  padding: 15px 30px;
+  border-radius: 26px;
+  margin-bottom: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+#sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 8px 0px 0px 8px;
+}
+#SUV {
+  background-color: hsl(184, 100%, 22%);
+}
+#luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 8px 8px 0px;
+}
+#btn-sedan {
+  color: hsl(31, 77%, 52%);
+}
+#btn-suv {
+  color: hsl(184, 100%, 22%);
+}
+#btn-luxury {
+  color: hsl(179, 100%, 13%);
+}
+#btn-sedan:active,
+#btn-suv:active,
+#btn-luxury:active {
+  background-color: inherit;
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+
+#btn-grid {
+  background: #000;
+
+  text-decoration: none;
+  margin-top: 20px;
+}
+#btn-grid > a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #fff;
 }

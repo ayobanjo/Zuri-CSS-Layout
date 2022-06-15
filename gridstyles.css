@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+  min-height: 100vh;
+  display: flex;
+  place-items: center;
+}
+main {
+  display: grid;
+  grid-template-areas:
+    " one  one one two "
+    " one one one two "
+    "three  three four four ";
+  gap: 10px;
+
+  width: 550px;
+  margin: auto;
+}
+
+.fl {
+  text-align: center;
+  height: 150px;
+}
+.item-one {
+  background-color: orange;
+  grid-area: one;
+  padding: 20px;
+}
+.item-two {
+  background-color: yellow;
+  grid-area: two;
+  padding: 20px;
+}
+.item-three {
+  background-color: green;
+  grid-area: three;
+  padding: 20px;
+}
+.item-four {
+  /* background-color: aqua; */
+  grid-area: four;
+}
+#four {
+  display: grid;
+  grid-template-areas:
+    "a a"
+    "b b";
+  gap: 10px;
+}
+.four-a {
+  background-color: blueviolet;
+  grid-area: a;
+  padding: 20px;
+}
+.four-b {
+  background-color: brown;
+  grid-area: b;
+  padding: 20px;
+}
+#btn-flex {
+  background: #000;
+  padding: 15px 10px;
+  border-radius: 26px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px;
+}
+#btn-flex > a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #fff;
+}
