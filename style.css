@@ -92,3 +92,23 @@ button {
   font-size: 17px;
   color: #fff;
 }
+
+@media screen and (max-width: 375px) {
+  body {
+    height: 100%;
+  }
+  main {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  #sedan {
+    border-radius: 8px 8px 0px 0px;
+  }
+  #luxury {
+    border-radius: 0px 0px 8px 8px;
+  }
+  #btn-grid {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
