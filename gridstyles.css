@@ -8,8 +8,9 @@ body {
   min-height: 100vh;
   display: flex;
   place-items: center;
+  padding: 2rem;
 }
-main {
+/* main {
   display: grid;
   grid-template-areas:
     " one  one one two "
@@ -19,11 +20,26 @@ main {
 
   width: 550px;
   margin: auto;
+} */
+main {
+  display: grid;
+  grid-template-areas:
+    " one  one one one two two "
+    " one one one one two two "
+    "three  three three four four four "
+    "three three three five five five";
+  gap: 10px;
+
+  width: 550px;
+  margin: auto;
 }
 
 .fl {
   text-align: center;
-  height: 150px;
+  /* height: 150px; */
+}
+.top {
+  height: 126.8px;
 }
 .item-one {
   background-color: orange;
@@ -41,10 +57,16 @@ main {
   padding: 20px;
 }
 .item-four {
-  /* background-color: aqua; */
+  background-color: aqua;
   grid-area: four;
+  padding: 20px;
 }
-#four {
+.item-five {
+  background-color: rgb(140, 0, 255);
+  grid-area: five;
+  padding: 20px;
+}
+/* #four {
   display: grid;
   grid-template-areas:
     "a a"
@@ -60,7 +82,7 @@ main {
   background-color: brown;
   grid-area: b;
   padding: 20px;
-}
+} */
 #btn-flex {
   background: #000;
   padding: 15px 10px;
