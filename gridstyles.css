@@ -9,6 +9,9 @@ body {
   display: flex;
   place-items: center;
   padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 /* main {
   display: grid;
@@ -23,23 +26,49 @@ body {
 } */
 main {
   display: grid;
+  grid-template-columns: 500px;
+  grid-template-rows: 150px 150px;
   grid-template-areas:
-    " one  one one one two two "
-    " one one one one two two "
-    "three  three three four four four "
-    "three three three five five five";
-  gap: 10px;
-
-  width: 550px;
+    "gridA"
+    "gridB";
+  gap: 15px;
+  width: auto;
   margin: auto;
+}
+
+.gridA {
+  grid-area: gridA;
+}
+.gridB {
+  grid-area: gridB;
 }
 
 .fl {
   text-align: center;
-  /* height: 150px; */
 }
-.top {
-  height: 126.8px;
+
+section {
+  display: grid;
+  grid-template-columns: 250px 75px 175px;
+  /* grid-template-rows: 200px; */
+  gap: 15px;
+}
+.classA {
+  grid-template-areas: "one one two";
+}
+.classB {
+  grid-template-areas: "three three2 three2";
+}
+
+.three2 {
+  grid-area: three2;
+
+  display: grid;
+  grid-template-rows: 75px 75px;
+  grid-template-areas:
+    "four"
+    "five";
+  gap: 15px;
 }
 .item-one {
   background-color: orange;
